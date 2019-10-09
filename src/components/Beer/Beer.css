@@ -1,0 +1,189 @@
+/*****************************************
+----------- Beer Details Page ------------
+*****************************************/
+.beer-details {
+  padding: 50px 0;
+}
+
+.beer-image {
+  height: 60vh
+}
+
+.beer-info hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.beer-info {
+    max-width: 50%;
+    position: relative;
+    float: left;
+    display: block;
+    margin-left: 7%;
+    top: 20%;
+    text-align: left;
+    color: #334D5C;
+}
+
+.beer-info h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+.beer-info h2 {
+    font-style: italic;
+    margin-top: 0%;
+}
+
+.beer-info h3 {
+    font-style: oblique;
+}
+
+.volume {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.description {
+    margin: 5% 0 5% 0;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.technical-info {
+    font-weight: 300;
+    margin-top: 5%;
+}
+
+.technical-info p {
+    display: inline;
+    margin: 0 3rem 0px 0px;
+}
+
+.food-pairing {
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #EFC84A;
+    font-weight: 600;
+}
+
+.list-group,
+.technical-info .col-6 {
+  text-align: center;
+}
+
+/*****************************************
+------------- Loader Styles  -------------
+*****************************************/
+.loader {
+    font-size: 10px;
+    margin: 50px auto;
+    text-indent: -9999em;
+    width: 11em;
+    height: 11em;
+    border-radius: 50%;
+    background: #ffffff;
+    background: -moz-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+    background: -webkit-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+    background: -o-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+    background: -ms-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+    background: linear-gradient(to right, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+    position: relative;
+    -webkit-animation: load3 1.4s infinite linear;
+    animation: load3 1.4s infinite linear;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  .loader:before {
+    width: 50%;
+    height: 50%;
+    background: #ffffff;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+  }
+  .loader:after {
+    background: #0dc5c200;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  @-webkit-keyframes load3 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes load3 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
+/*****************************************
+-------- Desktop Media Queries  ---------
+*****************************************/
+@media only screen and (min-width: 838px) {
+  .beer-details .img-wrapper .beer-image {
+    margin-top: 10vh;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .beer-details .beer-info {
+    max-width: none;
+    width: 80%;
+    float: none;
+    margin: 4vh auto 0;
+  }
+  
+  .beer-info h1 {
+    text-align: left;
+  }
+
+  .beer-image {
+    width: auto;
+  }
+}
+
+/*****************************************
+--------- Phones Media Queries  ----------
+*****************************************/
+@media only screen and (max-width: 838px) {
+  .beer-image {
+    height: 30vh;
+  }
+  .beer-info h1,
+  .beer-info h3,
+  .beer-info p.volume,
+  .technical-info .col-6 {
+    text-align: center;
+  }
+  .beer-info p.description {
+    text-align: justify;
+    text-align-last: center;
+  }
+}

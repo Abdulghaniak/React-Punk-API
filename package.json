@@ -1,0 +1,41 @@
+{
+  "name": "crypto-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "dexie": "^2.0.1",
+    "font-awesome": "^4.7.0",
+    "pubsub-js": "^1.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "description": "A React Web App using Punk API.",
+  "main": "src/index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julioxavierr/react-punk"
+  },
+  "keywords": [
+    "react",
+    "list",
+    "all",
+    "beers",
+    "punk-api"
+  ],
+  "author": "Júlio Xavier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julioxavierr/crypto-react/issues"
+  },
+  "homepage": "https://github.com/julioxavierr/crypto-react#readme"
+}

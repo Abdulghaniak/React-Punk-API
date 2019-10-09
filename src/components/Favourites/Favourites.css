@@ -1,0 +1,46 @@
+
+/*****************************************
+----------- Favourites Modal -------------
+*****************************************/
+/* Important part */
+.favourites {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.favourites .modal-dialog {
+    overflow-y: initial !important;
+}
+
+.favourites .modal-body {
+    overflow-y: auto;
+}
+
+.favourites .beer h6 {
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.favourites .beer p {
+    font-family: 'Oswald', sans-serif;
+    margin-top: 10px; 
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/*****************************************
+--------- Desktop Media Queries ----------
+*****************************************/
+@media only screen and (min-width: 836px) {
+    .favourites .modal-body {
+        max-height: 500px;
+    }
+    .favourites .beer .beer-img {
+        min-height: 150px;
+        height: 35vh;
+        max-height: 200px;
+    }
+}

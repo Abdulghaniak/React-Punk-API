@@ -1,0 +1,21 @@
+/*****************************************
+--------------- Navbar Styles ----------------
+*****************************************/
+@media only screen and (max-width: 835px) {
+    .navbar-brand {
+        width: 100%;
+    }
+    .navbar-brand img {
+        margin: 0 auto;
+    }
+    .search-field {
+        width: 100%;   
+        margin-top: 14px;
+    }
+    .form-inline.search-field .form-control {
+        width: 100%;
+    }
+    .form-inline .form-control {
+        width: 100%;
+    }
+}

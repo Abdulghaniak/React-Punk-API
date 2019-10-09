@@ -1,0 +1,112 @@
+/*****************************************
+--------------- Home Page ----------------
+*****************************************/
+
+/* Favourites Link */
+.star {
+    position: absolute;
+    margin-top: 3%;
+    left: 85%;
+    width: 8%;
+}
+.favourites-title {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background: rgb(0, 175, 219);
+    padding: 5px;
+    margin: 30px 0px;
+}
+
+/* Card Beers Styling */
+.beers h4,
+.beers h5 {
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+
+.beers .beer-name {
+    margin-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+}
+
+.beers .beer-tagline {
+    margin-top: 20px;
+}
+
+.beers .beer a:hover{
+    cursor: pointer;
+}
+
+.beers .beer {
+    background: #f9f9f9;
+    padding: 7px;
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.beers .beer a:hover {
+    text-decoration: none;
+}
+
+.beers .beer .fa-star {
+    float: right;
+    color: #d6d6d6;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.fa-star.favourite {
+    color: #00afdb !important;
+}
+
+/*****************************************
+-------- Desktop Media Queries  ---------
+*****************************************/
+@media only screen and (min-width: 836px) {
+    .beers {
+        display: grid;
+        grid-template-columns: 32% 32% 32%;
+        grid-gap: 18px;
+    }
+
+    .beers .beer .beer-img {
+        min-height: 150px;
+        height: 55vh;
+        max-height: 300px;
+    }
+}
+
+/*****************************************
+--------- Phones Media Queries  ----------
+*****************************************/
+@media only screen and (max-width: 835px) {
+    .beers {
+        display: block;
+    }
+    .beers .beer { 
+        width: 48%;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .beers .beer:nth-child(odd) {
+        margin-right: 2%;
+    }
+    .beers .beer:nth-child(even) {
+        margin-left: 2%;
+    }
+    .beers .beer .beer-img {
+        min-height: 100px;
+        height: 35vh;
+        max-height: 350px;
+    }
+    .beer-tagline {
+        white-space: nowrap;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+    }
+}
